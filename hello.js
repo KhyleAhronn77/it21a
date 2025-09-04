@@ -13,6 +13,9 @@ console.log("The difference of "+ num1 + " & " + num2 +" is "+ diff);
 console.log("The product of "+ num1 + " & " + num2 +" is "+ prod);
 console.log("The quotient "+ num1 + " & " + num2 +" is "+ quo);
 
+console.log("This is the lab/factorial branch");
+
+
 
 
 
