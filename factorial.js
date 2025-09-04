@@ -1,4 +1,4 @@
-console.log("Factorial Application");
+const readline = required("readline");
 
 const rl = readline.createInterface({
     input:process.stdin,
