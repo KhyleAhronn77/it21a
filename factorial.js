@@ -25,14 +25,18 @@ rl.question("Enter your choice (1-3)", choice =>{
             } else{
                 let fact =1;
 
-                for (let i=2; i<=num; i++){
+                for (let i=1 ; i<=num; i++){
                     fact *=i;
                 }
 
                 console.log("The factorial of "+ num + " is " + fact);
+
         }
+
+
     } else if (choice=="3"){
-        console.log ("exit!");
+        console.log ("Exiting program... Goodbye!");
+        rl.close();
     } else{
 
   
@@ -40,7 +44,7 @@ rl.question("Enter your choice (1-3)", choice =>{
 
     }
 
-})  
+});  
     
 
         
