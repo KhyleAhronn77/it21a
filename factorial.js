@@ -5,6 +5,7 @@ const rl = readline.createInterface({
     output:process.stout
 })
 
+function mainMenu(){
 console.log("factorial application");
 
 console.log("1. say hello");
@@ -43,6 +44,22 @@ rl.question("Enter your choice (1-3)", choice =>{
     console.log("Invalid Choice.Please Try Again");
 
     }
+
+    console.log("1. say hello");
+    console.log("2. compute factorial");
+    console.log("3. exit");
+
+    rl.question("Enter your choice (1-3)", choice =>{
+        if(choice==="1"){
+        } else if (choice==="2"){
+        } else if (choice=="3"){
+        } else{
+        console.log("Invalid Choice.Please Try Again");
+        }
+    
+        
+
+    }    
 
 });  
     
