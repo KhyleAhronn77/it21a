@@ -18,7 +18,7 @@ rl.question("Enter your choice (1-3)", choice =>{
     } else if (choice==="2"){
         console.log("factorial");
         rl.question("Enter a number for factorial: ", (numStr)=>{
-            let num = parseInt(numStr);
+            let num = parseInt(numStr);}
 
             if (isNaN() ) || num <0){
                 console.log("Invalid number. Please try again");
@@ -29,7 +29,7 @@ rl.question("Enter your choice (1-3)", choice =>{
                     fact *=i;
                 }
 
-                console.log(The factorial of "+ num + " is " + fact);
+                console.log("The factorial of "+ num + " is " + fact);
         }
     } else if (choice=="3"){
         console.log ("exit!");
@@ -41,7 +41,7 @@ rl.question("Enter your choice (1-3)", choice =>{
     }
 
 })  
-        
+    
 
         
   
