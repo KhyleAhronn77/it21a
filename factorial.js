@@ -7,6 +7,7 @@ const rl = readline.createInterface({
 
 function mainMenu(){
 console.log("factorial application");
+}
 
 console.log("1. say hello");
 console.log("2. compute factorial");
@@ -32,7 +33,30 @@ rl.question("Enter your choice (1-3)", choice =>{
 
                 console.log("The factorial of "+ num + " is " + fact);
 
+            }
+
         }
+
+
+function backToMenu(){
+    console.log("--------------------");
+    console.log("1. Back to main menu");
+    console.log("2. Exit");
+
+    rl.question("What would you to do next?  (1-2)", (mainMenuChoice) =>{
+        if (backToMenuChoice === "1"){
+            console.log("Exiting program... Goodbye!");
+            rl.close();
+            mainMenu();
+        } else {
+            console.log("Invalid Choice.Please Try Again");
+            backToMenu();
+        }
+            
+
+        }");
+    
+mainMenu();
 
 
     } else if (choice=="3"){
@@ -49,10 +73,12 @@ rl.question("Enter your choice (1-3)", choice =>{
     console.log("2. compute factorial");
     console.log("3. exit");
 
-    rl.question("Enter your choice (1-3)", choice =>{
+    rl.question("Enter your choice (1-3)", choice) =>{
         if(choice==="1"){
         } else if (choice==="2"){
+            computerFactorial();
         } else if (choice=="3"){
+            computerFactorial();
         } else{
         console.log("Invalid Choice.Please Try Again");
         }
