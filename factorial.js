@@ -6,88 +6,74 @@ const rl = readline.createInterface({
 })
 
 function mainMenu(){
-console.log("factorial application");
+console.log("factorial Application");
 }
 
 console.log("1. say hello");
 console.log("2. compute factorial");
 console.log("3. exit");
 
-rl.question("Enter your choice (1-3)", choice =>{
+rl.question("enter your choice (1-3)", choice =>{
     
     if(choice==="1"){
         console.log("hello There!");
+        backToMenu();
     } else if (choice==="2"){
-        console.log("factorial");
-        rl.question("Enter a number for factorial: ", (numStr)=>{
-            let num = parseInt(numStr);}
+        computeFactorial();
+    } else if (choice==="3"){
+        console.log ("exit");
+        rl.close();
+    } else{
+        console.log("Invalid Choice.Please Try Again");
+        mainMenu();
+    }
 
-            if (isNaN() ) || num <0){
-                console.log("Invalid number. Please try again");
+})
+
+function computeFactorial(){
+    console.log("Factorial");
+    rl.question("Enter a number for factorial: ", (num5tr)=> {
+            
+        let num = parseInt(num5tr);}
+         
+        if(isNaN(num) || num<0){
+                console.log("Please enter a non-negative integer");
+            
             } else{
-                let fact =1;
+                
+                let fact = 1;
 
-                for (let i=1 ; i<=num; i++){
+                for (let i=1 ; i <= num; i++){
                     fact *=i;
                 }
 
                 console.log("The factorial of "+ num + " is " + fact);
 
             }
+            backToMenu();
+    });
+}
+     
 
-        }
-
-
+        
 function backToMenu(){
-    console.log("--------------------");
-    console.log("1. Back to main menu");
-    console.log("2. Exit");
+    console.log("------------");
+    console.log("1. Back to menu");
+    console.log("2. exit");
 
     rl.question("What would you to do next?  (1-2)", (mainMenuChoice) =>{
         if (backToMenuChoice === "1"){
-            console.log("Exiting program... Goodbye!");
-            rl.close();
+            console.clear();
             mainMenu();
-        } else {
-            console.log("Invalid Choice.Please Try Again");
-            backToMenu();
+        } else if (backToMenuChoice === "2"){
+            console.log("exiting program... Goodbye!");
+            rl.close();
         }
-            
-
-        }");
-    
-mainMenu();
-
-
-    } else if (choice=="3"){
-        console.log ("Exiting program... Goodbye!");
-        rl.close();
-    } else{
-
-  
-    console.log("Invalid Choice.Please Try Again");
+     });
 
     }
+    mainMenu();
 
-    console.log("1. say hello");
-    console.log("2. compute factorial");
-    console.log("3. exit");
-
-    rl.question("Enter your choice (1-3)", choice) =>{
-        if(choice==="1"){
-        } else if (choice==="2"){
-            computerFactorial();
-        } else if (choice=="3"){
-            computerFactorial();
-        } else{
-        console.log("Invalid Choice.Please Try Again");
-        }
-    
-        
-
-    }    
-
-});  
     
 
         
