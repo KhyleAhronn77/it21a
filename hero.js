@@ -10,6 +10,12 @@ class Hero{
     getHealth(){
         return this.#health = this.#health;
     }
+
+    getStats(){
+        console.log("name: " + this.name);
+        console.log("health: " + this.health);
+        console.log("attack: " + this.attack);
+    }
 }
 
 class Warrior extends Hero{
@@ -24,13 +30,23 @@ class Mage extends Hero{
         this.mana = mana;
     }
     useAbility(){
-        console.log(`${this.name}casts Fireball!`);
+        console.log(`${this.name} casts Fireball!`);
 
     }
 }
 
-const warrior = new Warrior("Thorin",100,10);
-warrior.useAbility()
+const Thorin = new Warrior("Thorin",100,10);
+//Thorin.useAbility()
+Thorin.getStats();
 
-const mage = new Mage("Gandalf",80,8,50);
-mage.useAbility();
+const Gandal = new Mage("Gandal",80,8,50);
+//Gandal.useAbility();
+Gandal.getStats();
+
+function performAbility(hero){
+    console.log("\n");
+    hero.useAbility();
+}
+
+performAbility(Thorin);
+performAbility(Gandal);
