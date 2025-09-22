@@ -77,6 +77,7 @@ const Thorin = new Warrior("Thorin",100,10);
 //Thorin.getStats();
 //Thorin.getAttack();
 Thorin.getName();
+Thorin.getAttack();
 Thorin.getItem(sword);
 console.log(Thorin.totalAttack());
 Thorin.getItem(sword);
@@ -88,9 +89,9 @@ console.log(Thorin.totalAttack());
 
 
 
-const Gandal = new Mage("Gandal",80,8,50);
-Gandal.useAbility();
-Gandal.getStats();
+//const Gandal = new Mage("Gandal",80,8,50);
+//Gandal.useAbility();
+//Gandal.getStats();
 
-performAbility(Thorin);
-performAbility(Gandal);
+//performAbility(Thorin);
+//performAbility(Gandal);
