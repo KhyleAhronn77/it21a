@@ -1,47 +1,46 @@
 class Hero{
    
-    #health
+    #health;
     constructor (name,health,attack){
         this.name = name;
-        this.health = health;
+        this.#health = health;
         this.attack = attack;
-        this.Item =[];
+        this.Items =[];
     }
 
-    getHealth(){
-        return this.health;
-    
-    
-    
-
-    }
-
-    getStats(){
-        console.log("name: " + this.name);
-        console.log("health: " + this.health);
-        console.log("attack: " + this.attack);
-    }
-
-
-    getName(){
-        console.log(this.name)
+   getHealth(){
+        return this.#health;
     }
 
     getAttack(){
+
         console.log(this.attack);
     }
 
-    getItem(Item){
-        this.Item.push(Item);
+    getName(){
+        console.log(this.name);
+
+    }
+    getStats(){
+        console.log("/n");
+        console.log("Name:" + this.name);
+        console.log("Health:" + this.#health);
+        console.log("Attack:" + this.attack);
+    }
+    addItem(item){
+        this.Items.push(item);
+    }
+
+    totalAttack(){
+        return this.attack + this.Items.reduce((sum,i)=>sum + i.bonusAttack,0);
     }
 }
-
 class Warrior extends Hero{
     useAbility(){
-        console.log(`${this.name} uses power Strike`);
-
+        console.log(`${this.name} uses Power Strike!`);
     }
 }
+
 class Mage extends Hero{
     constructor(name,health,attack,mana){
         super(name,health,attack);
@@ -67,7 +66,7 @@ function performAbility(hero){
     hero.useAbility();
 }
 
-const sword = new Item("sword", 5);
+const sword = new Item("Sword",5);
 const staff = new Item("staff",3);
 
 
@@ -78,15 +77,14 @@ const Thorin = new Warrior("Thorin",100,10);
 //Thorin.getAttack();
 Thorin.getName();
 Thorin.getAttack();
-Thorin.getItem(sword);
+Thorin.addItem(sword);
 console.log(Thorin.totalAttack());
-Thorin.getItem(sword);
+Thorin.addItem(sword);
 console.log(Thorin.totalAttack());
-Thorin.getItem(sword);
+Thorin.addItem(sword);
 console.log(Thorin.totalAttack());
-Thorin.getItem(sword);
+Thorin.addItem(sword);
 console.log(Thorin.totalAttack());
-
 
 
 //const Gandal = new Mage("Gandal",80,8,50);
