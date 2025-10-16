@@ -6,14 +6,14 @@
     <title>LineChart</title>
    
     
-    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    >
+    
 </head>
 <body>
-    <h1>Line Chart</h1>
+    <h1>line chart</h1>
     <div>
-        <canvas> id="myChart"</canvas>
+        <canvas id="linechart"></canvas>
     </div>
     
 
@@ -76,7 +76,7 @@ class LineChart{
 }
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    const chart = LineChart("linechart", "linedata.json");
+    const chart = new LineChart("linechart", "linedata.json");
     chart.init();
 })
 </script>
