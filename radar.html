@@ -36,7 +36,7 @@
             options:{
                 responsive: true,
                 plugins:{
-                    legends:{
+                    legend:{
                         position:"top"
                     },
                 title:{
@@ -59,7 +59,7 @@
         async fetchData(){
             try{
                 const response = await fetch(this.dataUrl);
-                if(!reponse.ok) throw new Error(`Failed to load data: ${response.statusText}`);
+                if (!response.ok) throw new Error(`Failed to load data: ${response.statusText}`);
 
                 const data = await response.json();
                 return data;
