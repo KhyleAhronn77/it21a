@@ -26,7 +26,7 @@
         renderChart(data){
             const ctx = document.getElementById(this.canvasId).getContext("2d");
 
-            this.chart = new Chart(ctx,{
+            this.chart = new Chart( ctx,{
                type:"radar",
                data:{
 
@@ -59,13 +59,13 @@
         async fetchData(){
             try{
                 const response = await fetch(this.dataUrl);
-                if(!reponse.ok) throw new Error(`Failed to load data: ${response.StatusText}`);
+                if(!reponse.ok) throw new Error(`Failed to load data: ${response.statusText}`);
 
                 const data = await response.json();
                 return data;
 
             }catch(error){
-                console.error("Error fetching data:", error);
+                console.error("Error fetching Data:", error);
                 return null;
 
             }
@@ -81,5 +81,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const chart = new radarChart("radarChart", "radarData.json");
     chart.init();
 });
+
+
 </script>
 </html>
