@@ -57,7 +57,7 @@ class LineChart{
         const chart = new LineChart("linechart","linedata.json");
         chart.init();
 
-    });
+});
 
 
 class radarChart{
