@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT College of Information Technology | Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="images/cit-favicon.png"> 
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">NBSC BSIT College</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About CIT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faculty.html">The Faculty</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Year Levels
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="black-panthers.html">Black Panthers</a></li>
+                                <li><a class="dropdown-item" href="yellow-kitty.html">Yellow Kitty</a></li>
+                                <li><a class="dropdown-item" href="green-ninja.html">Green Ninja</a></li>
+                                <li><a class="dropdown-item" href="blue-dragon.html">Blue Dragon</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid mt-5 pt-5">
+
+        <section class="row">
+            <div class="col-12 p-0">
+                <div id="citCarousel" class="carousel slide" data-bs-ride="carousel">
+                    
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="about.html" class="stretched-link">
+                                <img src="green bNNER.jpg" class="d-block w-100" alt="CIT Students in Lab" style="max-height: 450px; object-fit: cover;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Innovate. Create. Lead.</h3>
+                                    <p>Join the next generation of tech experts.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="black-panthers.html" class="stretched-link">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=450&fit=crop" class="d-block w-100" alt="Programming Class" style="max-height: 450px; object-fit: cover;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Code Your Future</h3>
+                                    <p>Hands-on learning with industry tools.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="#" class="stretched-link">
+                                <!-- <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=450&fit=crop" class="d-block w-100" alt="Programming Class" style="max-height: 450px; object-fit: cover;"> -->
+                                <img src="combine mascot.png" class="d-block w-100" alt="Programming Class" style="max-height: 450px; object-fit: cover;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Compitative</h3>
+                                    <p>Hands-on learning with industry tools.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#citCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#citCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5 text-center">
+            <h1 class="display-5 fw-bold">WELCOME TO NBSC BSIT COLLEGE</h1>
+            <p class="lead my-4">
+                The College of Information Technology is dedicated to providing cutting-edge education in computer science, software engineering, and digital innovation. We empower our students to become the tech leaders of tomorrow.
+            </p>
+            
+            <p id="live-time" class="text-muted small"></p>
+
+            <a href="about.html" class="btn btn-primary btn-lg mt-3">Learn More About Us</a>
+        </section>
+
+        <section class="container my-5">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <h3>Software Development</h3>
+                    <p>Building robust applications using modern languages and frameworks.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h3>Network Security</h3>
+                    <p>Protecting data and systems in an increasingly complex digital world.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h3>UI/UX Design</h3>
+                    <p>Creating seamless and intuitive user experiences for all devices.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 College of Information Technology. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

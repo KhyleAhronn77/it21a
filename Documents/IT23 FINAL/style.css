@@ -1,0 +1,44 @@
+:root{
+    --royal-primary: #0a2e73;      /* deep royal blue */
+    --royal-secondary: #206af3;    /* bright academic blue */
+    --royal-accent: #ffcc33;       /* school gold */
+    --royal-bg: #f4f7ff;           /* soft bluish paper background */
+    --royal-text-dark: #00132d;    /* readable dark blue */
+    --royal-text-light: #ffffff;   /* white */
+}
+
+/* Page Base */
+body.royal-theme {
+    background-color: var(--royal-bg);
+    color: var(--royal-text-dark);
+    font-family: 'Segoe UI', sans-serif;
+    transition: .4s;
+}
+
+/* Header-style or Title */
+.custom-royal-text {
+    color: var(--royal-primary);
+    font-weight: 700;
+    border-bottom: 3px solid var(--royal-accent);
+    padding-bottom: 4px;
+}
+
+/* Highlight Ready State */
+.mascot-ready.royal-ready {
+    background-color: var(--royal-secondary);
+    color: var(--royal-text-light);
+    padding: 10px 18px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(32, 106, 243, 0.5);
+}
+
+/* Special Section or Card */
+.royal-card {
+    background: var(--royal-primary);
+    color: var(--royal-text-light);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 5px solid var(--royal-accent);
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+}
